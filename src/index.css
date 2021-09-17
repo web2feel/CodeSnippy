@@ -1,0 +1,8 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nice-select:active, .nice-select.open, .nice-select:focus {
+    border-color:rgba(129, 140, 248,1) !important;
+}
