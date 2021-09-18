@@ -8,9 +8,17 @@ export default function Home() {
   return (
     <div className="w-full h-screen bg-white dark:bg-dark font-Poppins  dark:text-t-light">
       <Header />
-      <div className="w-full h-vm flex">
-        {isOpen && <Sidebar />}
-        <div className={`${!isOpen ? "w-full" : ""} flex-1 flex `}>
+      <div className="w-full h-vm flex relative">
+        <Sidebar
+          classList={`transform ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        />
+        <div
+          className={`transform duration-700 ${
+            !isOpen ? "w-full" : "pl-80"
+          } flex-1 flex `}
+        >
           <Main />
         </div>
       </div>
