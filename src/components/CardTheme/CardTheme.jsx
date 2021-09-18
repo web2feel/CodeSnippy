@@ -1,4 +1,4 @@
-import React from "react";
+import Radio from "../Inputs/Radio/Radio";
 
 export default function CardTheme() {
   return (
@@ -9,12 +9,8 @@ export default function CardTheme() {
 
       <br />
       <div className="flex w-full justify-start">
-        <button className="w-14 h-14 mr-3 rounded-md shadow-xl  p-2 hover:shadow-lg  cursor-pointer  outline-none transition transition-duration-300 ease-out bg-indigo-600 text-white ">
-          <div className="w-full h-full ri-sun-fill text-2xl flex items-center justify-center "></div>
-        </button>
-        <button className="w-14 h-14 mr-3 rounded-md border border-gray-300 p-2 hover:shadow-lg  text-gray-400cursor-pointer  outline-none transition transition-duration-300 ease-out ">
-          <div className="w-full h-full ri-moon-fill text-2xl flex items-center justify-center "></div>
-        </button>
+        <Radio icon="ri-sun-fill" id="light" checkedInp/>
+        <Radio icon="ri-moon-fill" id="dark" />
       </div>
     </div>
   );

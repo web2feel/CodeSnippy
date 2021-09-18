@@ -1,8 +1,8 @@
 import React from "react";
 import Background from "../Background/Background";
 import CardTheme from "../CardTheme/CardTheme";
-import CodeColorTheme from "../CodeColorTheme/CodeColorTheme";
-import Font from "../Font/Font";
+import Select from "../Select/Select";
+import Presets from "../Presets/Presets";
 
 export default function Theme() {
   return (
@@ -10,10 +10,11 @@ export default function Theme() {
       <p className="font-medium text-gray-800">
         <span className="ri-paint-fill"></span>&nbsp; Theme Settings
       </p>
-      <Font />
-      <CodeColorTheme/>
-      <Background/>
+      <Select title="CODE THEME" />
+      <Select title="LANGUAGE" />
       <CardTheme/>
+      <Background/>
+      <Presets/>
     </>
   );
 }
