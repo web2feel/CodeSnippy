@@ -11,7 +11,8 @@ module.exports = {
         'code-l':'rgba(255,255,255,0.5)',
       },
       fontFamily:{
-        "Poppins":"Poppins, sans-serif"
+        "Poppins":"Poppins, sans-serif",
+        "Blinker":"Blinker"
       },
       spacing:{
         'vm':"calc(100vh - 4rem)",

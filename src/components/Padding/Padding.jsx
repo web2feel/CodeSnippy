@@ -4,7 +4,7 @@ import Select from "../Inputs/Select/Select";
 export default function Padding({text}) {
   return (
     <div className="mt-5 w-full">
-      <span className="text-xs text-gray-600 font-medium mb-3 inline-block">
+      <span className="text-sm text-gray-600 font-medium mb-3 inline-block">
         {text}
       </span>
 

@@ -6,8 +6,8 @@ import WindowControls from "../WindowControls/WindowControls";
 export default function Window() {
   return (
     <>
-      <p className="font-medium text-gray-800 flex items-center">
-        <span className="text-xl ri-window-fill "></span>&nbsp; Window Settings
+      <p className="font-semibold text-gray-800 flex items-center text-lg">
+        <span className="text-xl ri-window-fill font-medium "></span>&nbsp; Window Settings
       </p>
       <WindowControls />
       <Padding text="PADDING VERTICAL"/>

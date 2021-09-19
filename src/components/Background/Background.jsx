@@ -3,7 +3,7 @@ import React from "react";
 export default function Background() {
   return (
     <div className="mt-5 w-full">
-      <span className="text-xs text-gray-600 font-medium inline-block">
+      <span className="text-sm text-gray-600 font-medium inline-block">
         BACKGROUND
       </span>
       <br />

@@ -6,7 +6,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(true);
   return (
-    <div className="w-full h-screen bg-white dark:bg-dark font-Poppins  dark:text-t-light">
+    <div className="w-full h-screen bg-white dark:bg-dark font-Blinker  dark:text-t-light">
       <Header />
       <div className="w-full h-vm flex relative">
         <Sidebar

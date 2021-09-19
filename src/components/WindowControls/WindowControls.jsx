@@ -6,7 +6,7 @@ import control_3 from "./Icons/control_3.svg";
 export default function WindowControls() {
   return (
     <div className="mt-5 w-full">
-      <span className="text-xs text-gray-600 font-medium  inline-block">
+      <span className="text-sm text-gray-600 font-medium  inline-block">
         CONTROLS
       </span>
       <br />
