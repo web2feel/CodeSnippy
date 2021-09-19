@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FloatingCard from "../components/FloatingCard/FloatingCard";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
 import Sidebar from "../components/Sidebar/Sidebar";
@@ -22,6 +23,7 @@ export default function Home() {
           <Main />
         </div>
       </div>
+      <FloatingCard />
     </div>
   );
 }

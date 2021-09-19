@@ -3,9 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection{
-  background:#8B5CF6  ;
-  color:white;
+::selection {
+  background: #8b5cf6;
+  color: white;
 }
 .nice-select:active,
 .nice-select.open,
@@ -17,9 +17,6 @@ input[type="radio"]:checked + label {
   background: #4f46e5;
   color: #fff;
 }
-
-
-
 
 .sidebar::-webkit-scrollbar {
   width: 4px;
@@ -33,9 +30,7 @@ input[type="radio"]:checked + label {
   background-color: rgb(216, 216, 216);
 }
 
-
 .sidebar {
-    scrollbar-width: 2px;          
-    scrollbar-color: rgb(216, 216, 216) rgba(0, 0, 0, 0);  
-  }
-
+  scrollbar-width: 2px;
+  scrollbar-color: rgb(216, 216, 216) rgba(0, 0, 0, 0);
+}
