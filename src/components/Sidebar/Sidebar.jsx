@@ -10,8 +10,8 @@ export default function Sidebar({ classList }) {
       className={`z-10 transition duration-700 ease-in-out sidebar h-vm w-80 border-gray-300 border-r p-7 overflow-y-auto absolute -left-0 ${classList}`}
     >
       {/* <Editor /> */}
-      {/* <Theme /> */}
-      <Window />
+      <Theme />
+      {/* <Window /> */}
       {/* <Export/> */}
     </div>
   );
