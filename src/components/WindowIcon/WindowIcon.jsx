@@ -3,8 +3,8 @@ import React from "react";
 export default function WindowIcon() {
   return (
     <div className="p-4 absolute left-0 top-0">
-        <svg class="h-3 " viewBox="0 0 252 64">
-      <g fill="none" fill-rule="evenodd">
+        <svg className="h-3 " viewBox="0 0 252 64">
+      <g fill="none" fillRule="evenodd">
         <g fill="#666">
           <circle id="Oval" cx="32" cy="32" r="32" fill="#F93D3D"></circle>
           <circle

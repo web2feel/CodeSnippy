@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import FloatingCard from "../components/FloatingCard/FloatingCard";
 import Header from "../components/Header/Header";
 import Main from "../components/Main/Main";
 import Sidebar from "../components/Sidebar/Sidebar";
-
+import { Context } from "../context/Context";
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(true);
+  const { menus, isOpen, setIsOpen } = useContext(Context);
+
   return (
     <div className="w-full h-screen bg-white dark:bg-dark font-Blinker  dark:text-t-light">
       <Header />

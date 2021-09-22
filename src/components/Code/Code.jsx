@@ -3,7 +3,7 @@ import "codemirror/lib/codemirror.css";
 import "codemirror/mode/css/css";
 import "codemirror/mode/javascript/javascript";
 import "codemirror/mode/xml/xml";
-import "codemirror/theme/material.css";
+import "codemirror/theme/base16-light.css";
 import { Controlled as CodeMirror } from "react-codemirror2";
 
 export default function Code() {
@@ -51,7 +51,7 @@ export default function Code() {
         lineWrapping: true,
         lint: true,
         mode: "css",
-        theme: "material",
+        theme: "base16-light",
         lineNumbers: true,
       }}
     />
