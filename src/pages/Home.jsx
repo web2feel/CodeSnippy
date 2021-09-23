@@ -10,14 +10,14 @@ export default function Home() {
   return (
     <div className="w-full h-screen bg-white  font-Blinker   ease-in-out  ">
       <Header />
-      <div className="w-full h-vm flex relative">
         <Sidebar
           classList={`transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         />
+      <div className="w-full min-h-vm flex relative ">
         <div
-          className={`transform duration-700 ${
+          className={`transform duration-700  ${
             !isOpen ? "w-full" : "pl-80"
           } flex-1 flex `}
         >

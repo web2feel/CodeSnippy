@@ -46,6 +46,29 @@ export default function Code() {
         scrollbar-width: 2px;
         scrollbar-color: rgb(216, 216, 216) rgba(0, 0, 0, 0);
       }
+      .sidebar {
+        scrollbar-width: 2px;
+        scrollbar-color: rgb(216, 216, 216) rgba(0, 0, 0, 0);
+      }
+      .sidebar {
+        scrollbar-width: 2px;
+        scrollbar-color: rgb(216, 216, 216) rgba(0, 0, 0, 0);
+      }
+
+      .sidebar {
+        scrollbar-width: 2px;
+        scrollbar-color: rgb(216, 216, 216) rgba(0, 0, 0, 0);
+      }
+
+      .sidebar {
+        scrollbar-width: 2px;
+        scrollbar-color: rgb(216, 216, 216) rgba(0, 0, 0, 0);
+      }
+
+      .sidebar {
+        scrollbar-width: 2px;
+        scrollbar-color: rgb(216, 216, 216) rgba(0, 0, 0, 0);
+      }
       `}
       options={{
         lineWrapping: true,
@@ -53,6 +76,7 @@ export default function Code() {
         mode: "css",
         theme: "base16-light",
         lineNumbers: true,
+        scrollbarStyle:null
       }}
     />
   );

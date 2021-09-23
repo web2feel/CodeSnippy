@@ -12,7 +12,7 @@ export default function URLShare() {
       </button> */}
 
       <div className="mt-2">
-      <input type="text" className="bg-black   w-full h-10 border  border-gray-300 outline-none rounded-md px-3 text-base text-gray-600 font-Blinker" readOnly value="https://codesnippy.sooryakriz.com/wq342-32hj3-324h2"/>
+      <input type="text" className="w-full h-10 border  border-gray-300 outline-none rounded-md px-3 text-base text-gray-600 font-Blinker" readOnly value="https://codesnippy.sooryakriz.com/wq342-32hj3-324h2"/>
       </div>
 
     </div>

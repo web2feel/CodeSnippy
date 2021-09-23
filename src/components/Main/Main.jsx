@@ -1,10 +1,10 @@
 import React from "react";
 import WindowIcon from "../WindowIcon/WindowIcon";
-import Code from "../Code/Code"
+import Code from "../Code/Code";
 export default function Main() {
   return (
-    <div className="bg-gradient-to-br from-pink-600 via-indigo-500 to-green-500 p-20 rounded-md flex items-center justify-center mx-auto w-full max-w-screen-md my-auto min-h-auto ">
-      <div className="code bg-white bg-opacity-70 rounded-md w-full h-full pb-3 px-3">
+    <div className="bg-gradient-to-br from-pink-600 via-indigo-500 to-green-500 p-20 rounded-md flex items-center justify-center mx-auto w-full max-w-screen-md my-36 ">
+      <div className="code bg-white bg-opacity-70 rounded-md  pb-3 px-3 w-full">
         <div className="header flex items-center justify-center relative py-3">
           <WindowIcon />
           <input
@@ -13,8 +13,8 @@ export default function Main() {
           />
           <span></span>
         </div>
-        <div className="h-auto">
-          <Code/>
+        <div className="">
+          <Code />
         </div>
       </div>
     </div>

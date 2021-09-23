@@ -41,3 +41,6 @@ input[type="checkbox"]:checked + label {
   scrollbar-width: 2px;
   scrollbar-color: rgb(216, 216, 216) rgba(0, 0, 0, 0);
 }
+.CodeMirror {
+  height: auto !important;
+}

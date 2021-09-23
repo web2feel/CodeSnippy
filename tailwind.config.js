@@ -21,6 +21,9 @@ module.exports = {
       },
       maxWidth:{
         'sm':'400px'
+      },
+      minHeight:{
+        'vm':'calc(100vh - 4rem)'
       }
     },
   },
