@@ -11,7 +11,7 @@ export default function Editor() {
         Editor Settings
       </p>
       <Font />
-      <div className="text-sm mt-2 text-gray-600 font-medium  border-gray-300 flex items-center justify-between">
+      <div className="text-sm mt-2 text-gray-600 font-medium   border-gray-300 flex items-center justify-between">
         LINE NUMBER <Toggle />
       </div>
       <Padding text="LINE HEIGHT" />

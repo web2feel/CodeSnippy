@@ -9,7 +9,7 @@ export default function FloatingCard() {
         isOpen ? "pl-80" : null
       }`}
     >
-      <div className="w-full bg-white border border-gray-300 h-22 rounded-md shadow-2xl mx-auto  max-w-sm duration-700 transition flex  items-center justify-between px-3  ">
+      <div className="w-full border bg-white  border-gray-300 h-22 rounded-md shadow-2xl mx-auto  max-w-sm duration-700 transition flex  items-center justify-between px-3  ">
         {menus.map(({ txt, icon, id, selected }, index) => (
           <MenuBtn
             txt={txt}

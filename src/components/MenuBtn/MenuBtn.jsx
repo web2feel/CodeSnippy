@@ -33,7 +33,7 @@ export default function MenuBtn({
       />
       <label
         htmlFor={id}
-        className="flex flex-col justify-center absolute top-0 left-0  items-center text-gray-500 w-full h-full border border-gray-300 rounded-md hover:shadow-xl outline-none transition duration-300 cursor-pointer p-2"
+        className="flex flex-col justify-center absolute top-0 left-0  items-center 400 text-gray-500  border-gray-300 w-full h-full border    rounded-md hover:shadow-xl outline-none transition duration-300 cursor-pointer p-2"
       >
         <i className={`${icon} text-lg`}></i>
         <span className="text-sm">{txt}</span>

@@ -11,7 +11,7 @@ export default function WindowControls() {
       </span>
       <br />
       <div className="grid grid-cols-3 gap-5 w-full mt-3">
-        <button className="hover:shadow-lg w-16 h-16 rounded-md border border-gray-300 p-2 cursor-pointer bg-white relative  focus:border-indigo-400 outline-none transition transition-duration-300 ease-out">
+        <button className="hover:shadow-lg w-16 h-16 rounded-md border  border-gray-300 p-2 cursor-pointer bg-white relative  focus:border-indigo-400 outline-none transition transition-duration-300 ease-out">
           <img
             src={control_1}
             alt=""
@@ -19,14 +19,14 @@ export default function WindowControls() {
           />
         </button>
 
-        <button className="hover:shadow-lg w-16 h-16 rounded-md border border-gray-300 p-2 cursor-pointer bg-white relative  focus:border-indigo-400 outline-none transition transition-duration-300 ease-out">
+        <button className="hover:shadow-lg w-16 h-16 rounded-md border  border-gray-300 p-2 cursor-pointer bg-white relative  focus:border-indigo-400 outline-none transition transition-duration-300 ease-out">
           <img
             src={control_2}
             alt=""
             className="w-12 absolute bottom-0 right-0 h-10 object-cover rounded-sm"
           />
         </button>
-        <button className="hover:shadow-lg w-16 h-16 rounded-md border border-gray-300 p-2 cursor-pointer bg-white relative  focus:border-indigo-400 outline-none transition transition-duration-300 ease-out">
+        <button className="hover:shadow-lg w-16 h-16 rounded-md border  border-gray-300 p-2 cursor-pointer bg-white relative  focus:border-indigo-400 outline-none transition transition-duration-300 ease-out">
           <img
             src={control_3}
             alt=""

@@ -8,7 +8,7 @@ export default function Home() {
   const { menus, isOpen, setIsOpen } = useContext(Context);
 
   return (
-    <div className="w-full h-screen bg-white dark:bg-d-primary font-Blinker dark:text-t-light">
+    <div className="w-full h-screen bg-white  font-Blinker   ease-in-out  ">
       <Header />
       <div className="w-full h-vm flex relative">
         <Sidebar

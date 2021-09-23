@@ -12,7 +12,7 @@ export default function Radio({ icon, action, id ,checkedInp}) {
       />
       <label
         htmlFor={id}
-        className="w-14 absolute top-0 left-0 h-14 rounded-md   p-2 hover:shadow-lg border border-gray-300 cursor-pointer  outline-none transition transition-duration-300 ease-out  text-gray-400 "
+        className="w-14 absolute top-0 left-0 h-14 rounded-md   p-2 hover:shadow-lg border  border-gray-300 cursor-pointer  outline-none transition transition-duration-300 ease-out  text-gray-400 "
       >
         <div
           className={`w-full h-full ${icon} text-2xl flex items-center justify-center `}

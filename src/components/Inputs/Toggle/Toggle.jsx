@@ -9,7 +9,7 @@ function Toggle() {
       checked={enabled}
       onChange={setEnabled}
       className={`outline-none ${
-        enabled ? 'bg-indigo-600' : 'bg-gray-200'
+        enabled ? 'bg-indigo-600' : 'bg-gray-200 '
       } relative inline-flex items-center h-6 rounded-full w-11`}
     >
       <span className="sr-only">Enable notifications</span>
