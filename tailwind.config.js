@@ -10,6 +10,7 @@ module.exports = {
         "t-light": "#e8e9ea",
         "d-bcol": "#202020",
         "code-l": "rgba(255,255,255,0.5)",
+        "d-primary":"#383849"
       },
       fontFamily: {
         Poppins: "Poppins, sans-serif",

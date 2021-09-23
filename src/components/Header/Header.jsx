@@ -33,7 +33,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className="w-full h-16 border-gray-300 dark:border-d-bcol border-b bg-white dark:bg-dark flex items-center justify-between  px-5 md:px-28">
+    <div className="w-full h-16 border-gray-300 dark:border-d-bcol border-b bg-white dark:bg-d-primary flex items-center justify-between  px-5 md:px-28">
       <span className="logo font-bold text-lg text-logo">CodeSnippy.</span>
       <div className="header_controls flex items-center justify-center">
         <button

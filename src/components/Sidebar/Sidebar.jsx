@@ -10,18 +10,14 @@ export default function Sidebar({ classList }) {
     <div
       className={`z-10 transition duration-700 ease-in-out sidebar h-vm w-80 border-gray-300 border-r p-7 overflow-y-auto absolute -left-0 ${classList}`}
     >
-      {menus[0].id === "editor" && menus[0].selected && (
-        <Editor />
-      )}
-      {menus[1].id === "theme" && menus[1].selected && (
-        <Theme />
-      )}
-      {menus[2].id === "window" && menus[2].selected && (
-        <Window />
-      )}
-      {menus[3].id === "export" && menus[3].selected && (
-        <Export />
-      )}
+      {menus.map((menu) => (
+        <div key={menu.id}>
+          {menu.id === "editor" && menu.selected && <Editor />}
+          {menu.id === "theme" && menu.selected && <Theme />}
+          {menu.id === "window" && menu.selected && <Window />}
+          {menu.id === "export" && menu.selected && <Export />}
+        </div>
+      ))}
     </div>
   );
 }

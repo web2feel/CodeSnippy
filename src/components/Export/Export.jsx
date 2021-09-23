@@ -4,9 +4,9 @@ import Select from "../Inputs/Select/Select";
 import Share from "../Share/Share";
 import URLShare from "../URLShare/URLShare";
 
-export default function Export({ classList }) {
+export default function Export() {
   return (
-    <div className={classList}>
+    <>
       <p className="font-semibold text-gray-800 flex items-center text-lg">
         <span className="text-xl font-medium ri-share-forward-fill "></span>
         &nbsp; Export Settings
@@ -41,6 +41,6 @@ export default function Export({ classList }) {
         </div>
         <Share txt="SHARE URL" url />
       </div>
-    </div>
+    </>
   );
 }
