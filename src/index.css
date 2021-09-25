@@ -1,3 +1,7 @@
+body {
+  padding: 0px !important;
+}
+
 /* ./src/index.css */
 @tailwind base;
 @tailwind components;
@@ -13,31 +17,56 @@
   border-color: rgba(129, 140, 248, 1) !important;
 }
 
-input[type="radio"]:checked + label {
+input[type="menu"]:checked + label {
   background: #4f46e5;
   color: #fff;
-  border:none
+  border: none;
+}
+
+input[name="background"]:checked + label {
+  border: 1.7px solid rgba(129, 140, 248, 1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 input[type="checkbox"]:checked + label {
   background: #4f46e5;
   color: #fff;
-  border:none
+  border: none;
 }
 
-.sidebar::-webkit-scrollbar {
+.nice-select .list {
+  padding-left: 4px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  max-height: 200px !important;
+  overflow-y: scroll !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid rgba(209, 213, 219, 1) !important;
+}
+
+.nice-select .list .option {
+  border-radius: 4px !important;
+}
+
+.sidebar::-webkit-scrollbar,
+.nice-select .list::-webkit-scrollbar {
   width: 4px;
 }
 
-.sidebar::-webkit-scrollbar-track {
+.sidebar::-webkit-scrollbar-track,
+.nice-select .list::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
 }
 
-.sidebar::-webkit-scrollbar-thumb {
+.sidebar::-webkit-scrollbar-thumb,
+.nice-select .list::-webkit-scrollbar-thumb {
   background-color: rgb(216, 216, 216);
 }
 
-.sidebar {
+.sidebar,
+.nice-select .list {
   scrollbar-width: 2px;
   scrollbar-color: rgb(216, 216, 216) rgba(0, 0, 0, 0);
 }

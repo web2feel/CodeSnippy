@@ -1,10 +1,26 @@
-import React from "react";
+import { useEffect, useRef } from "react";
+import $ from "jquery";
+import "jquery-nice-select/css/style.css";
+window.jQuery = window.$ = $;
+require("jquery-nice-select");
+export default function Select({ classList, options }) {
+  const selectRef = useRef();
 
-export default function Select({ w, options }) {
+  useEffect(() => {
+    $(selectRef.current).niceSelect();
+  }, []);
+
   return (
-    <select name="" id="" className={`${w}  mb-5 flex items-center text-base`}>
-      {options.map((txt) => (
-        <option value={txt}>{txt}</option>
+    <select
+      name=""
+      ref={selectRef}
+      id=""
+      className={`${classList} mb-5 wide dark:bg-dark  flex items-center text-lg`}
+    >
+      {options.map(({ value, selected }) => (
+        <option selected={selected} value={value}>
+          {value}
+        </option>
       ))}
     </select>
   );

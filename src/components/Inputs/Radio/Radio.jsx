@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Radio({ icon, action, id ,checkedInp}) {
+export default function Radio({ icon, action, id ,checkedInp,name}) {
   return (
     <div className="w-14 h-14 relative mr-3 ">
       <input
         type="radio"
         id={id}
-        name="theme"
+        name={name}
         className="appearance-none transform  outline-none -translate-y-1/2 -translate-x-1/2 absolute left-1/2 top-1/2 w-14 h-14 "
         checked={checkedInp}
       />

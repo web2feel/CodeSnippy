@@ -17,8 +17,8 @@ export default function Home() {
         />
       <div className="w-full min-h-vm flex relative ">
         <div
-          className={`transform duration-700  ${
-            !isOpen ? "w-full" : "pl-80"
+          className={`transform duration-700  px-6 ${
+            !isOpen ? "w-full" : "lg:pl-80"
           } flex-1 flex `}
         >
           <Main />

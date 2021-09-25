@@ -3,22 +3,27 @@
  */
 export const background = [
   {
+    id: "bg-1",
     value: "bg-gradient-to-r from-green-300 via-blue-500 to-purple-600",
     selected: true,
   },
   {
+    id: "bg-2",
     value: "bg-gradient-to-r from-indigo-300 to-purple-400",
     selected: false,
   },
   {
+    id: "bg-3",
     value: "bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500",
     selected: false,
   },
   {
+    id: "bg-4",
     value: "bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400",
     selected: false,
   },
   {
+    id: "bg-5",
     value: "bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500",
     selected: false,
   },
@@ -29,11 +34,11 @@ export const background = [
  */
 export const codeTheme = [
   {
-    value: "",
+    value: "Monokai",
     selected: true,
   },
   {
-    value: "",
+    value: "Onedark pro",
     selected: false,
   },
 ];

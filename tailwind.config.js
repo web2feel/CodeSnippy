@@ -1,7 +1,6 @@
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode:false,
-  mode: 'jit',
   theme: {
     extend: {
       colors: {
@@ -18,6 +17,7 @@ module.exports = {
         hm: "calc(100vw - 20rem)",
         half: "48%",
         22: "5.5rem",
+        76:'19rem'
       },
       maxWidth:{
         'sm':'400px'

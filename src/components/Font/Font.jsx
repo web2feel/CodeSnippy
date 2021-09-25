@@ -8,10 +8,10 @@ export default function Font() {
         TEXT
       </span>
       <br />
-      <Select w="w-full" options={['Monokai','10','12','14','16','18','20','22','24','26','28']}/>
+      <Select options={['Monokai','10','12','14','16','18','20','22','24','26','28']}/>
       <div className="flex items-center justify-between w-full">
-        <Select w="w-half" options={['Regular','10','12','14','16','18','20','22','24','26','28']}/>
-        <Select w="w-half" options={['10','12','14','16','18','20','22','24','26','28']}/>
+        <Select classList="mr-2" options={['Regular','10','12','14','16','18','20','22','24','26','28']}/>
+        <Select classList="ml-2" options={['10','12','14','16','18','20','22','24','26','28']}/>
       </div>
     </div>
   );

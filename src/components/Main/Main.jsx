@@ -3,8 +3,8 @@ import WindowIcon from "../WindowIcon/WindowIcon";
 import Code from "../Code/Code";
 export default function Main() {
   return (
-    <div className="bg-gradient-to-br from-pink-600 via-indigo-500 to-green-500 p-20 rounded-md flex items-center justify-center mx-auto w-full max-w-screen-md my-36 ">
-      <div className="code bg-white bg-opacity-70 rounded-md  pb-3 px-3 w-full">
+    <div className="bg-gradient-to-br from-pink-600 via-indigo-500 to-green-500 px-7 py-10 rounded-md flex items-center justify-center mx-auto w-full max-w-screen-md my-36 ">
+      <div className="code bg-white bg-opacity-70 rounded-md  p-4 w-full">
         <div className="header flex items-center justify-center relative py-3">
           <WindowIcon />
           <input

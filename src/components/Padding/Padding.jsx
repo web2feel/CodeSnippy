@@ -9,7 +9,7 @@ export default function Padding({text}) {
       </span>
 
       <br />
-        <Select w="w-full"  options={['10','12','14','16','18','20','22','24','26','28']}/>
+        <Select options={['10','12','14','16','18','20','22','24','26','28']}/>
     </div>
   );
 }

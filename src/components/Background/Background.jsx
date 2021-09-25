@@ -21,10 +21,25 @@ export default function Background() {
         <button className="hover:shadow-lg w-14 h-14  rounded-md border  border-gray-300 p-2 cursor-pointer focus:border-indigo-400 outline-none transition transition-duration-300 ease-out ">
           <div className="w-full h-full ri-palette-fill text-xl flex items-center justify-center text-gray-400"></div>
         </button>
-        {state?.theme?.background?.map((gradient) => (
-          <button className="hover:shadow-lg w-14 h-14  rounded-md border  border-gray-300 p-2 cursor-pointer focus:border-indigo-400 outline-none transition transition-duration-300 ease-out">
-            <div className={`w-full h-full rounded-sm ${gradient.value}`}></div>
-          </button>
+        {state?.theme?.background?.map(({ id, value, selected }) => (
+          // <button className="hover:shadow-lg w-14 h-14  rounded-md border  border-gray-300 p-2 cursor-pointer focus:border-indigo-400 outline-none transition transition-duration-300 ease-out">
+          //   <div className={`w-full h-full rounded-sm ${gradient.value}`}></div>
+          // </button>
+          <div className="w-14 h-14 relative mr-3 ">
+            <input
+              type="radio"
+              id={id}
+              name="background"
+              className="appearance-none transform  outline-none -translate-y-1/2 -translate-x-1/2 absolute left-1/2 top-1/2 w-14 h-14 "
+              checked={selected}
+            />
+            <label
+              htmlFor={id}
+              className="absolute top-0 left-0 hover:shadow-lg w-14 h-14  rounded-md border border-gray-300 p-2 cursor-pointer outline-none transition transition-duration-300 ease-out"
+            >
+              <div className={`w-full h-full rounded-sm ${value}`}></div>
+            </label>
+          </div>
         ))}
       </div>
     </div>
