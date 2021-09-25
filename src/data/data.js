@@ -1043,23 +1043,23 @@ export const padding = [
  */
 export const family = [
   {
-    value: "",
+    value: "Fira Code",
     selected: true,
   },
   {
-    value: "",
+    value: "Roboto Mono",
     selected: false,
   },
   {
-    value: "",
+    value: "Space Mono",
     selected: false,
   },
   {
-    value: "",
+    value: "JetBrains Mono",
     selected: false,
   },
   {
-    value: "",
+    value: "Source Code Pro",
     selected: false,
   },
 ];
@@ -1069,23 +1069,59 @@ export const family = [
  */
 export const size = [
   {
-    value: "",
+    value: "9",
     selected: true,
   },
   {
-    value: "",
+    value: "10",
     selected: false,
   },
   {
-    value: "",
+    value: "11",
     selected: false,
   },
   {
-    value: "",
+    value: "12",
     selected: false,
   },
   {
-    value: "",
+    value: "13",
+    selected: false,
+  },
+  {
+    value: "14",
+    selected: false,
+  },
+  {
+    value: "16",
+    selected: false,
+  },
+  {
+    value: "18",
+    selected: false,
+  },
+  {
+    value: "24",
+    selected: false,
+  },
+  {
+    value: "36",
+    selected: false,
+  },
+  {
+    value: "48",
+    selected: false,
+  },
+  {
+    value: "64",
+    selected: false,
+  },
+  {
+    value: "71",
+    selected: false,
+  },
+  {
+    value: "96",
     selected: false,
   },
 ];
@@ -1095,23 +1131,19 @@ export const size = [
  */
 export const type = [
   {
-    value: "",
+    value: "Regular",
     selected: true,
   },
   {
-    value: "",
+    value: "Medium",
     selected: false,
   },
   {
-    value: "",
+    value: "Semi Bold",
     selected: false,
   },
   {
-    value: "",
-    selected: false,
-  },
-  {
-    value: "",
+    value: "Bold",
     selected: false,
   },
 ];
@@ -1122,7 +1154,7 @@ export const type = [
 export const lineHeight = [
   {
     value: "None",
-    selected: true,
+    selected: false,
   },
   {
     value: "Tight",
@@ -1134,7 +1166,7 @@ export const lineHeight = [
   },
   {
     value: "Normal",
-    selected: false,
+    selected: true,
   },
   {
     value: "Relaxed",
