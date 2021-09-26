@@ -15,7 +15,7 @@ export default function Select({ classList, options }) {
       name=""
       ref={selectRef}
       id=""
-      className={`${classList} mb-5 wide dark:bg-dark  flex items-center text-lg`}
+      className={`${classList} mb-5 wide dark:bg-dark  flex items-center `}
     >
       {options.map(({ value, selected }) => (
         <option selected={selected} value={value}>

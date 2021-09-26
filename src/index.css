@@ -8,8 +8,8 @@ body {
 @tailwind utilities;
 
 ::selection {
-  background: #8b5cf6;
-  color: white;
+  background: #aebaff !important;
+  color: white !important;
 }
 .nice-select:active,
 .nice-select.open,
@@ -73,3 +73,22 @@ input[type="checkbox"]:checked + label {
 .CodeMirror {
   height: auto !important;
 }
+
+.codemirror-wrapper.Roboto-Mono .CodeMirror {
+  font-family: "Roboto Mono", monospace !important;
+}
+
+.codemirror-wrapper.JetBrains-Mono .CodeMirror {
+  font-family: 'JetBrains Mono', monospace !important;}
+
+.codemirror-wrapper.Space-Mono .CodeMirror {
+  font-family: 'Space Mono', monospace !important;}
+
+.codemirror-wrapper.Source-Code-Pro .CodeMirror {
+  font-family: 'Source Code Pro', monospace !important;
+}
+
+.codemirror-wrapper.Fira-Code .CodeMirror {
+  font-family: 'Fira Code', monospace !important;
+}
+

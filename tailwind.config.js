@@ -1,6 +1,6 @@
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode:false,
+  darkMode: false,
   theme: {
     extend: {
       colors: {
@@ -11,20 +11,26 @@ module.exports = {
       fontFamily: {
         Poppins: "Poppins, sans-serif",
         Blinker: "Blinker",
+        "Roboto-Mono": "Roboto Mono, monospace",
+        "Space-Mono": "Space Mono, monospace",
+        "JetBrains-Mono": "JetBrains Mono, monospace",
+        "Source-Code-Pro": "Source Code Pro, monospace",
+        "Fira-Code": "Fira Code, monospace",
       },
       spacing: {
         vm: "calc(100vh - 4rem)",
         hm: "calc(100vw - 20rem)",
         half: "48%",
         22: "5.5rem",
-        76:'19rem'
+        76: "19rem",
+        15:"3.8rem"
       },
-      maxWidth:{
-        'sm':'400px'
+      maxWidth: {
+        sm: "400px",
       },
-      minHeight:{
-        'vm':'calc(100vh - 4rem)'
-      }
+      minHeight: {
+        vm: "calc(100vh - 4rem)",
+      },
     },
   },
   variants: {

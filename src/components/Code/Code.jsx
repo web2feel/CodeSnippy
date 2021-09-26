@@ -9,8 +9,12 @@ import { Controlled as CodeMirror } from "react-codemirror2";
 export default function Code() {
   return (
     <CodeMirror
-      className="codemirror-wrapper"
+      className="codemirror-wrapper" 
       value={`/* ./src/index.css */
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
       @tailwind base;
       @tailwind components;
       @tailwind utilities;
@@ -24,7 +28,8 @@ export default function Code() {
         mode: "css",
         theme: "base16-light",
         lineNumbers: true,
-        scrollbarStyle:null
+        scrollbarStyle:null,
+        
       }}
     />
   );

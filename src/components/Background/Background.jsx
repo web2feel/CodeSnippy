@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../../context/Context";
+import ColorPicker from "../ColorPicker/ColorPicker";
+import ImageUpload from "../ImageUpload/ImageUpload";
 
 export default function Background() {
   const { state, setState } = useContext(Context);
@@ -14,13 +16,11 @@ export default function Background() {
         <button className="hover:shadow-lg w-14 h-14  rounded-md border  border-gray-300 p-2 cursor-pointer focus:border-indigo-400 outline-none transition transition-duration-300 ease-out ">
           <div className="w-full h-full ri-blur-off-fill text-xl flex items-center justify-center text-gray-400"></div>
         </button>
-        <button className="hover:shadow-lg w-14 h-14  rounded-md border  border-gray-300 p-2 cursor-pointer focus:border-indigo-400 outline-none transition transition-duration-300 ease-out ">
-          <div className="w-full h-full ri-image-add-fill text-xl flex items-center justify-center text-gray-400"></div>
-        </button>
+        {/* Image Upload */}
+        <ImageUpload />
+        {/* Color Picker */}
 
-        <button className="hover:shadow-lg w-14 h-14  rounded-md border  border-gray-300 p-2 cursor-pointer focus:border-indigo-400 outline-none transition transition-duration-300 ease-out ">
-          <div className="w-full h-full ri-palette-fill text-xl flex items-center justify-center text-gray-400"></div>
-        </button>
+        <ColorPicker />
         {state?.theme?.background?.map(({ id, value, selected }) => (
           // <button className="hover:shadow-lg w-14 h-14  rounded-md border  border-gray-300 p-2 cursor-pointer focus:border-indigo-400 outline-none transition transition-duration-300 ease-out">
           //   <div className={`w-full h-full rounded-sm ${gradient.value}`}></div>
