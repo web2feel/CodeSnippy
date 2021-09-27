@@ -287,10 +287,6 @@ export const controls = [
  */
 export const shadow = [
   {
-    value: "none",
-    selected: true,
-  },
-  {
     value: "sm",
     selected: false,
   },

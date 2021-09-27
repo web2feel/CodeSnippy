@@ -8,13 +8,13 @@ export default function Home() {
   const { menus, isOpen, setIsOpen } = useContext(Context);
 
   return (
-    <div className="w-full h-screen bg-white  font-Blinker   ease-in-out  ">
+    <div className="w-full h-screen bg-white font-Blinker  ease-in-out  ">
       <Header />
-        <Sidebar
-          classList={`transform ${
-            isOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
-        />
+      <Sidebar
+        classList={`transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      />
       <div className="w-full min-h-vm flex relative ">
         <div
           className={`transform duration-700  px-6 ${

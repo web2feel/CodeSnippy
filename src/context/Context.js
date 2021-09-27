@@ -13,7 +13,7 @@ import {
   lineHeight,
   allMenus,
 } from "../data/data";
-import { handleMenu ,closeMenu} from "../helper/menu";
+import { handleMenu, closeMenu } from "../helper/menu";
 export const Context = createContext(null);
 
 export const ContextProvider = ({ children }) => {
@@ -41,6 +41,9 @@ export const ContextProvider = ({ children }) => {
       lineHeight,
       lineNumber: true,
     },
+    export: {
+      
+    },
   });
   const [menus, setMenus] = useState(allMenus);
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +55,7 @@ export const ContextProvider = ({ children }) => {
     handleMenu,
     isOpen,
     setIsOpen,
-    closeMenu
+    closeMenu,
   };
   return <Context.Provider value={value}>{children}</Context.Provider>;
 };

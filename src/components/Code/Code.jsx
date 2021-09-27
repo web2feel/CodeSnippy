@@ -17,7 +17,7 @@ export default function Code() {
         lint: true,
         mode: "javascript",
         theme: "one-light",
-        // lineNumbers: true,
+        lineNumbers: true,
         scrollbarStyle: null,
       }}
     />

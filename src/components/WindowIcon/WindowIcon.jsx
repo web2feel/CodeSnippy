@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WindowIcon() {
   return (
-    <div className=" absolute left-0 top-2">
+    <div className=" absolute left-0 top-3">
       <svg className="h-3 " viewBox="0 0 252 64">
         <g fill="none" fillRule="evenodd">
           <g fill="#666">

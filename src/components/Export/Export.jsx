@@ -18,7 +18,7 @@ export default function Export() {
       <div className="url">
         <URLShare />
         <div className="mt-5 w-full">
-          <span className="text-sm text-gray-600 font-medium mb-3 inline-block">
+          <span className="text-sm letter text-gray-600 font-medium mb-3 inline-block">
             ANYONE WITH THIS LINK CAN
           </span>
 
