@@ -4,7 +4,7 @@ import { Fragment } from "react";
 export default function ColorPicker() {
   return (
     <Popover className="relative">
-      {({ open }) => (
+      {({ open, close }) => (
         <>
           <Popover.Button className="hover:shadow-lg w-14 h-14  rounded-md border  border-gray-300 p-2 cursor-pointer focus:border-indigo-400 outline-none transition transition-duration-300 ease-out ">
             <div className="w-full h-full ri-palette-fill text-xl flex items-center justify-center text-gray-400"></div>
@@ -19,7 +19,7 @@ export default function ColorPicker() {
             leaveTo="opacity-0 translate-y-1"
           >
             <Popover.Panel className="absolute z-10 w-72 -left-2 mx-auto mt-3 transform -translate-x-1/2  font-Poppins ">
-              <div className="w-full bg-white h-60 rounded-lg shadow-2xl border border-gray-300 p-5 ">
+              <div className="w-full bg-white h-48 rounded-lg shadow-2xl border border-gray-300 p-5 ">
                 <div>
                   <span className="text-xs font-Poppins text-gray-600 font-medium inline-block mt-1">
                     BACKGROUND
@@ -37,8 +37,19 @@ export default function ColorPicker() {
                   <span className="text-xs font-Poppins text-gray-600 font-medium inline-block mt-5">
                     CUSTOM COLOR
                   </span>
-                  <div>
-                  <input type="text" className="w-auto max-w- h-10 border mt-2 shadow-lg  border-gray-300 outline-none rounded-md px-3 text-base text-gray-600 font-Blinker"  value="#151515"/>
+                  <div className="w-full flex items-center justify-between mt-2">
+                    <input
+                      type="text"
+                      className="w-auto h-10 border mr-2 focus:shadow-md transition duration-300 ease-in-out focus:border-indigo-300  border-gray-300 outline-none rounded-md px-3 text-base text-gray-600 font-Blinker"
+                      value="#151515"
+                    />
+                    <button
+                      onClick={() => {
+                        alert("Hi");
+                        close();
+                      }}
+                      className="ri-check-fill w-10 h-10 rounded-md  text-white bg-indigo-600 focus:ring ring-indigo-600 ring-opacity-40 transition duration-300 ease-in-out font-bold text-lg outline-none "
+                    ></button>
                   </div>
                 </div>
               </div>

@@ -3,33 +3,22 @@ import "codemirror/lib/codemirror.css";
 import "codemirror/mode/css/css";
 import "codemirror/mode/javascript/javascript";
 import "codemirror/mode/xml/xml";
-import "codemirror/theme/base16-light.css";
+// import "codemirror/theme/base16-light.css";
+import "./Code.css";
 import { Controlled as CodeMirror } from "react-codemirror2";
 
 export default function Code() {
   return (
     <CodeMirror
-      className="codemirror-wrapper" 
-      value={`/* ./src/index.css */
-      @tailwind base;
-      @tailwind components;
-      @tailwind utilities;
-
-      @tailwind base;
-      @tailwind components;
-      @tailwind utilities;
-      
-  
-    
-      `}
+      className="codemirror-wrapper text-sm leading-6"
+      value={""}
       options={{
         lineWrapping: true,
         lint: true,
-        mode: "css",
-        theme: "base16-light",
-        lineNumbers: true,
-        scrollbarStyle:null,
-        
+        mode: "javascript",
+        theme: "one-light",
+        // lineNumbers: true,
+        scrollbarStyle: null,
       }}
     />
   );

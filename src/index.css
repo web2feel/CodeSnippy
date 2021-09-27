@@ -72,6 +72,7 @@ input[type="checkbox"]:checked + label {
 }
 .CodeMirror {
   height: auto !important;
+  width: auto !important
 }
 
 .codemirror-wrapper.Roboto-Mono .CodeMirror {

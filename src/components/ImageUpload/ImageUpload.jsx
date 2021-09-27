@@ -19,15 +19,15 @@ export default function ImageUpload() {
             leaveTo="opacity-0 translate-y-1"
           >
             <Popover.Panel className="absolute z-10 w-72 left-15 mx-auto mt-3 transform -translate-x-1/2  font-Poppins ">
-              <div className="w-full bg-white h-60 rounded-lg shadow-2xl border border-gray-300 p-5 text-center">
-                <div className="border-2 w-full h-full  border-gray-400 rounded-md border-dashed flex items-center justify-center">
+              <div className="w-full bg-white h-60 rounded-xl shadow-2xl border border-gray-300 p-5 text-center">
+                <div className="border-2 w-full h-full  border-gray-300 rounded-md border-dashed flex items-center justify-center">
                   <div>
                     <i class="ri-upload-cloud-fill text-4xl text-gray-400"></i>
                     <p className="text-xs tracking-wide	leading-5 text-gray-400 font-medium m-0">
                       DRAG & DROP YOUR FILES HERE <br />
                       OR <br />
                     </p>
-                    <button className="w-32 h-7 mt-2 bg-indigo-600  shadow-lg focus:ring outline-none transition duration-300 ring-indigo-300 rounded-sm text-white text-xs">
+                    <button className="w-32 h-7 mt-2 bg-indigo-600  shadow-lg focus:ring outline-none transition duration-300 ring-indigo-300 rounded-md text-white text-xs">
                       Browse
                     </button>
                   </div>
@@ -40,3 +40,4 @@ export default function ImageUpload() {
     </Popover>
   );
 }
+ 
