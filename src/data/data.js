@@ -305,9 +305,9 @@ export const shadow = [
 ];
 
 /**
- * Padding
+ * Padding Vertical
  */
-export const padding = [
+export const paddingVertical = [
   {
     value: "10",
     selected: true,
@@ -389,6 +389,94 @@ export const padding = [
     selected: false,
   },
 ];
+
+
+/**
+ * Padding Horizontal
+ */
+ export const paddingHorizontal = [
+  {
+    value: "10",
+    selected: true,
+  },
+  {
+    value: "11",
+    selected: false,
+  },
+  {
+    value: "12",
+    selected: false,
+  },
+  {
+    value: "14",
+    selected: false,
+  },
+  {
+    value: "16",
+    selected: false,
+  },
+  {
+    value: "20",
+    selected: false,
+  },
+  {
+    value: "24",
+    selected: false,
+  },
+  {
+    value: "28",
+    selected: false,
+  },
+  {
+    value: "32",
+    selected: false,
+  },
+  {
+    value: "36",
+    selected: false,
+  },
+  {
+    value: "40",
+    selected: false,
+  },
+  {
+    value: "44",
+    selected: false,
+  },
+  {
+    value: "48",
+    selected: false,
+  },
+  {
+    value: "52",
+    selected: false,
+  },
+  {
+    value: "56",
+    selected: false,
+  },
+  {
+    value: "60",
+    selected: false,
+  },
+  {
+    value: "64",
+    selected: false,
+  },
+  {
+    value: "72",
+    selected: false,
+  },
+  {
+    value: "80",
+    selected: false,
+  },
+  {
+    value: "96",
+    selected: false,
+  },
+];
+
 
 /**
  * Font Family
@@ -560,6 +648,20 @@ export const allMenus = [
     txt: "Export",
     icon: "ri-share-forward-fill",
     id: "export",
+    selected: false,
+  },
+];
+
+/**
+ * URL Permission
+ */
+export const URLPermission = [
+  {
+    value: "View",
+    selected: true,
+  },
+  {
+    value: "Edit",
     selected: false,
   },
 ];

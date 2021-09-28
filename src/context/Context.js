@@ -6,12 +6,14 @@ import {
   codeTheme,
   controls,
   shadow,
-  padding,
+  paddingVertical,
+  paddingHorizontal,
   type,
   family,
   size,
   lineHeight,
   allMenus,
+  URLPermission,
 } from "../data/data";
 import { handleMenu, closeMenu } from "../helper/menu";
 export const Context = createContext(null);
@@ -29,7 +31,8 @@ export const ContextProvider = ({ children }) => {
     },
     window: {
       controls,
-      padding,
+      paddingVertical,
+      paddingHorizontal,
       shadow,
     },
     editor: {
@@ -42,7 +45,7 @@ export const ContextProvider = ({ children }) => {
       lineNumber: true,
     },
     export: {
-      
+      URLPermission,
     },
   });
   const [menus, setMenus] = useState(allMenus);

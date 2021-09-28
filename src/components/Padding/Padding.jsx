@@ -1,7 +1,7 @@
 import React from "react";
 import Select from "../Inputs/Select/Select";
 
-export default function Padding({text}) {
+export default function Padding({ text, options }) {
   return (
     <div className="mt-5 w-full">
       <span className="text-sm text-gray-600 font-medium mb-3 inline-block">
@@ -9,7 +9,7 @@ export default function Padding({text}) {
       </span>
 
       <br />
-        <Select options={['10','12','14','16','18','20','22','24','26','28']}/>
+      <Select options={options} />
     </div>
   );
 }

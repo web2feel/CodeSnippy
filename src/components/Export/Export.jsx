@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import ImageShare from "../ImageShare/ImageShare";
 import Select from "../Inputs/Select/Select";
 import Share from "../Share/Share";
 import URLShare from "../URLShare/URLShare";
-
+import { Context } from "../../context/Context";
 export default function Export() {
+  const { state, setState } = useContext(Context);
   return (
     <>
       <p className="font-semibold text-gray-800 flex items-center text-lg">
@@ -23,21 +24,7 @@ export default function Export() {
           </span>
 
           <br />
-          <Select
-            w="w-full"
-            options={[
-              "View Only",
-              "12",
-              "14",
-              "16",
-              "18",
-              "20",
-              "22",
-              "24",
-              "26",
-              "28",
-            ]}
-          />
+          <Select options={state.export.URLPermission} />
         </div>
         <Share txt="SHARE URL" url />
       </div>
