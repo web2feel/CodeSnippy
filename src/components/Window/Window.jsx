@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import DropShadow from "../DropShadow/DropShadow";
-import Padding from "../Padding/Padding";
 import WindowControls from "../WindowControls/WindowControls";
 import { Context } from "../../context/Context";
+import Select from "../Inputs/Select/Select";
 export default function Window() {
   const { state, setState } = useContext(Context);
   return (
@@ -12,11 +12,16 @@ export default function Window() {
         Window Settings
       </p>
       <WindowControls />
-      <Padding text="PADDING VERTICAL" options={state.window.paddingVertical} />
-      <Padding
-        text="PADDING HORIZONTAL"
-        options={state.window.paddingHorizontal}
-      />
+      <div className="mt-5 w-full">
+        <span className="text-sm text-gray-600 font-medium mb-3 inline-block">
+          BORDER
+        </span>
+
+        <br />
+        <Select
+          options={state.window.border}
+        />
+      </div>{" "}
       <DropShadow />
     </>
   );

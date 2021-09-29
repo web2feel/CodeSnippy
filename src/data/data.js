@@ -34,12 +34,94 @@ export const background = [
  */
 export const codeTheme = [
   {
-    value: "Monokai",
-    selected: true,
+    value: "Abbott",
+    selected: false,
+    theme: "dark",
   },
   {
-    value: "Onedark pro",
+    value: "Ambiance",
     selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Ayu Dark",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Ayu Mirage",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Base-16 Dark",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Base-16 Light",
+    selected: false,
+    theme: "light",
+  },
+  {
+    value: "Dracula",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Duotone",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Material",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Midnight",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Monokai",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Mreq",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Nord",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Oceanic",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "One Dark",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "One Light",
+    selected: true,
+    theme: "light",
+  },
+  {
+    value: "Tomorrow Night Eighties",
+    selected: false,
+    theme: "dark",
+  },
+  {
+    value: "Venom",
+    selected: false,
+    theme: "dark",
   },
 ];
 
@@ -305,180 +387,6 @@ export const shadow = [
 ];
 
 /**
- * Padding Vertical
- */
-export const paddingVertical = [
-  {
-    value: "10",
-    selected: true,
-  },
-  {
-    value: "11",
-    selected: false,
-  },
-  {
-    value: "12",
-    selected: false,
-  },
-  {
-    value: "14",
-    selected: false,
-  },
-  {
-    value: "16",
-    selected: false,
-  },
-  {
-    value: "20",
-    selected: false,
-  },
-  {
-    value: "24",
-    selected: false,
-  },
-  {
-    value: "28",
-    selected: false,
-  },
-  {
-    value: "32",
-    selected: false,
-  },
-  {
-    value: "36",
-    selected: false,
-  },
-  {
-    value: "40",
-    selected: false,
-  },
-  {
-    value: "44",
-    selected: false,
-  },
-  {
-    value: "48",
-    selected: false,
-  },
-  {
-    value: "52",
-    selected: false,
-  },
-  {
-    value: "56",
-    selected: false,
-  },
-  {
-    value: "60",
-    selected: false,
-  },
-  {
-    value: "64",
-    selected: false,
-  },
-  {
-    value: "72",
-    selected: false,
-  },
-  {
-    value: "80",
-    selected: false,
-  },
-  {
-    value: "96",
-    selected: false,
-  },
-];
-
-
-/**
- * Padding Horizontal
- */
- export const paddingHorizontal = [
-  {
-    value: "10",
-    selected: true,
-  },
-  {
-    value: "11",
-    selected: false,
-  },
-  {
-    value: "12",
-    selected: false,
-  },
-  {
-    value: "14",
-    selected: false,
-  },
-  {
-    value: "16",
-    selected: false,
-  },
-  {
-    value: "20",
-    selected: false,
-  },
-  {
-    value: "24",
-    selected: false,
-  },
-  {
-    value: "28",
-    selected: false,
-  },
-  {
-    value: "32",
-    selected: false,
-  },
-  {
-    value: "36",
-    selected: false,
-  },
-  {
-    value: "40",
-    selected: false,
-  },
-  {
-    value: "44",
-    selected: false,
-  },
-  {
-    value: "48",
-    selected: false,
-  },
-  {
-    value: "52",
-    selected: false,
-  },
-  {
-    value: "56",
-    selected: false,
-  },
-  {
-    value: "60",
-    selected: false,
-  },
-  {
-    value: "64",
-    selected: false,
-  },
-  {
-    value: "72",
-    selected: false,
-  },
-  {
-    value: "80",
-    selected: false,
-  },
-  {
-    value: "96",
-    selected: false,
-  },
-];
-
-
-/**
  * Font Family
  */
 export const family = [
@@ -662,6 +570,28 @@ export const URLPermission = [
   },
   {
     value: "Edit",
+    selected: false,
+  },
+];
+
+/**
+ * Line Height
+ */
+export const border = [
+  {
+    value: "None",
+    selected: false,
+  },
+  {
+    value: "Thin",
+    selected: false,
+  },
+  {
+    value: "Normal",
+    selected: true,
+  },
+  {
+    value: "Thick",
     selected: false,
   },
 ];

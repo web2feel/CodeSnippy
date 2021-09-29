@@ -3,7 +3,6 @@ import { Context } from "../../context/Context";
 import Font from "../Font/Font";
 import Select from "../Inputs/Select/Select";
 import Toggle from "../Inputs/Toggle/Toggle";
-import Padding from "../Padding/Padding";
 
 export default function Editor() {
   const {state,setState} = useContext(Context)

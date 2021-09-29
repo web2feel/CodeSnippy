@@ -6,14 +6,13 @@ import {
   codeTheme,
   controls,
   shadow,
-  paddingVertical,
-  paddingHorizontal,
   type,
   family,
   size,
   lineHeight,
   allMenus,
   URLPermission,
+  border
 } from "../data/data";
 import { handleMenu, closeMenu } from "../helper/menu";
 export const Context = createContext(null);
@@ -31,9 +30,8 @@ export const ContextProvider = ({ children }) => {
     },
     window: {
       controls,
-      paddingVertical,
-      paddingHorizontal,
       shadow,
+      border
     },
     editor: {
       font: {
