@@ -12,7 +12,7 @@ export default function MenuBtn({
   const { menus, setMenus, setIsOpen } = useContext(Context);
 
   return (
-    <div className="relative h-14 w-14 lg:h-16 lg:w-16">
+    <div className="relative h-14 w-14 lgx:h-16 lgx:w-16">
       <input
         type="checkbox"
         name="menu"
@@ -35,8 +35,8 @@ export default function MenuBtn({
         htmlFor={id}
         className="flex flex-col justify-center absolute top-0 left-0  items-center 400 text-gray-500  border-gray-300 w-full h-full border    rounded-md hover:shadow-xl outline-none transition duration-300 cursor-pointer p-2"
       >
-        <i className={`${icon} text-base lg:text-lg`}></i>
-        <span className="text-xs lg:text-sm">{txt}</span>
+        <i className={`${icon} text-base lgx:text-lg`}></i>
+        <span className="text-xs lgx:text-sm">{txt}</span>
       </label>
     </div>
   );

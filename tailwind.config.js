@@ -23,7 +23,8 @@ module.exports = {
         half: "48%",
         22: "5.5rem",
         76: "19rem",
-        15:"3.8rem"
+        15:"3.8rem",
+        dim:"45%"
       },
       maxWidth: {
         sm: "400px",
@@ -31,6 +32,9 @@ module.exports = {
       minHeight: {
         vm: "calc(100vh - 4rem)",
       },
+      screens:{
+        "lgx":"1130px"
+      }
     },
   },
   variants: {

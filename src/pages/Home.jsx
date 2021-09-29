@@ -15,10 +15,10 @@ export default function Home() {
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       />
-      <div className="w-full min-h-vm flex relative ">
+      <div className="w-full min-h-vm flex relative top-0 ">
         <div
           className={`transform duration-700  px-6 ${
-            !isOpen ? "w-full" : "lg:pl-80"
+            !isOpen ? "w-full" : "lgx:pl-80"
           } flex-1 flex `}
         >
           <Main />
