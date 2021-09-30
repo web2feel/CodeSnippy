@@ -24,7 +24,7 @@ export default function Presets() {
           <img src={image} alt="" className="w-full h-full object-cover rounded-sm" />
         </button>
             <button className="hover:shadow-lg w-20 h-20 rounded-md border  border-gray-300 p-2 cursor-pointer focus:border-indigo-400 outline-none transition transition-duration-300 ease-out">
-          <img src={image} alt="" className="w-full h-full object-cover rounded-sm" />
+          <img src={'/favicon.png'} alt="" className="w-full h-full object-cover rounded-sm" />
         </button>
   
         
