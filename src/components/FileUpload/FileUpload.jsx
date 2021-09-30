@@ -4,24 +4,39 @@ import React, { Fragment, useRef } from "react";
 export default function FileUpload({ show, setShow }) {
   const fileInput = useRef(null);
   return (
-      <div className="fixed w-full h-screen bg-black bg-opacity-20 z-30 flex items-center justify-center p-6 font-Blinker ">
-          
+    <Transition
+    as={Fragment}
+
+      show={show}
+      enter="ease-out duration-300"
+      enterFrom="opacity-0"
+      enterTo="opacity-100"
+      leave="ease-in duration-300"
+      leaveFrom="opacity-100"
+      leaveTo="opacity-0"
+    >
+      <div
+        className={`fixed w-full h-screen bg-black bg-opacity-20 z-30 flex items-center justify-center p-6 font-Blinker`}
+      >
         <div className="bg-white container mx-auto h-auto w-full rounded-md p-7 md:p-10">
           <div className="flex items-center justify-between w-full">
             <span className="w-4"></span>
             <span className="text-lg font-semibold text-gray-700">
               Upload Text File
             </span>
-            <span onClick={()=>setShow(false)} className="ri-close-line text-lg text-gray-400 cursor-pointer hover:text-gray-500 transition duration-300 ease-in-out"></span>
+            <span
+              onClick={() => setShow(false)}
+              className="ri-close-line text-lg text-gray-400 cursor-pointer hover:text-gray-500 transition duration-300 ease-in-out"
+            ></span>
           </div>
-          <div className="mt-10 w-full  border-2 border-dashed border-gray-200 rounded-md flex flex-col justify-center items-center h-80 md:h-96 text-gray-500">
+          <div className="mt-10 w-full  border-2 border-dashed border-gray-200 rounded-md flex flex-col justify-center items-center h-80 md:h-96 text-gray-400">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
               height="50"
               fill="none"
               viewBox="0 0 24 24"
-              className="text-gray-500 mb-2"
+              className="text-gray-400 mb-2"
             >
               <path
                 stroke="currentColor"
@@ -61,5 +76,6 @@ export default function FileUpload({ show, setShow }) {
           </div>
         </div>
       </div>
+    </Transition>
   );
 }

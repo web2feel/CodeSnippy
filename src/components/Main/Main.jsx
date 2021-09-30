@@ -40,8 +40,7 @@ export default function Main() {
           // target.textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(event.rect.height)
           cardWidth.current.textContent = `${Math.round(event.rect.width)}px`;
           cardHeight.current.textContent = `${Math.round(event.rect.height)}px`;
-        },
-        onend: () => {
+
           setTimeout(() => {
             xMeas.current.classList.add("opacity-0");
             yMeas.current.classList.add("opacity-0");
